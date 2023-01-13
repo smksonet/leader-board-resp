@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    background: #c7e7f7;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+}
+
+/* top players */
+.container{
+    width:870px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.box-1{
+    padding:30px;
+}
+.box-title{
+    color: #562EFF;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 0px;
+}
+.player img{
+    height: 56px;
+    width: 56px;
+}
+.player-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.player{
+    display: flex;
+    align-items: center;
+    padding:10px;
+}
+.player p{
+    color: #000000;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+hr{
+    margin-top:25px;
+    border: 1px solid #D1D1D1
+}
+
+/* ..........Top Blog...........
+..................... */
+.blog-designs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+
+}
+.blog-container{
+    display: flex;
+    align-items: center;
+}
+.blog-container img{
+    height: 117px;
+    width: 177px;
+}
+.box-2{
+    padding: 0px 20px 0px 30px;
+}
+.blog-discription{
+    font-weight: 500;
+    font-size: 20px;
+    margin-left:15px;
+}
+.blog-discription span{
+    color: #a7a7a7;
+    font-weight: 500;
+    font-size:16px;
+}
+.blog-discription a{
+    color:#562EFF;
+    font-weight: 500;
+    font-size:16px;
+    text-decoration: none;
+}
+
+/* .......Lates Course..........
+.............
+ */
+ .part-2{
+    margin-top: 20px;
+ }
+.course-container{
+    padding: 30px;
+}
+ .inner-container-box{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+
+ }
+ .course-box img{
+    width: 224px;
+    height: 104px;
+    border-radius:5px;
+ }
+ .course-box{
+    box-shadow:(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+    background-color:#ececec;
+    padding:13px 0px 0px 11px;
+    border-radius: 5px;
+ }
+ .course-box-description p{
+    color:#ED6B4F;
+ }
+ .course-box-description h3{
+    font-weight: 500;
+    font-size: 20px;
+ }
+.course-box-description-end{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.fa-star{
+    font-size: 12px;
+}
+ .fa-star.filled{
+      color:#FFC014;;
+ }
+ .fa-star.emtey{
+    color: #AEAEAE;
+ }
+ .course-duration{
+    background-color: #FFE4E8;
+    border-radius: 20px;
+ }
+ .course-box-description-end p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    color: #999696;
+}
+ .course-duration .fa-solid.fa-clock{
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px;
+    color: #FF4A60;
+ }
+ 
+ /* ..................................................
+ .............mobile.....................media query..
+ ............................................................. */
+ @media only screen and (max-width:576px) {
+    .container{
+        width: 100%;
+        background-color: #fffbfb;
+    }
+    body{
+        flex-direction: column;
+        background-color: #ececec;
+       
+    }
+    .player-box{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    /* ----------------------------------------- */
+    .blog-designs,.inner-container-box{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blog-container,.inner-container-box{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+ /* ..................................................
+ .............meddium heand set..............media query..
+ ............................................................. */
+
